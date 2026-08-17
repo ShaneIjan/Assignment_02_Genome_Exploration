@@ -31,7 +31,7 @@ The tool was used to obtain the total assembly length, number of sequences, mini
 
 **Figure 1.** Assembly Statistics of the *Canis lupus* genome generated using Fasta Statistics tool.
 
-### **Part 3:** Compute sequence length
+### **Part 3:** Compute Sequence Length
 
 This tool was used to determine the length of each FASTA sequence. The five longest sequences were identified and recorded.
 
@@ -39,7 +39,7 @@ This tool was used to determine the length of each FASTA sequence. The five long
 
 **Figure 2.** Results of the Compute Sequence Length tool showing the lengths of the *Canis lupus* genome sequences.
 
-### **Part 4:** Filter sequences by length & Fasta Statistics
+### **Part 4:** Filter Sequences by Length & Fasta Statistics
 
 A copy of the original genome was filtered using a minimum sequence length of 10,000 bp (10 kb). Fasta Statistics was then used again to compare the original and filtered genome.
 
@@ -49,7 +49,11 @@ A copy of the original genome was filtered using a minimum sequence length of 10
 
 ### **Part 5:** Filter FASTA & getorf
 
-The **Filter FASTA** tool was first used to select the sequence CAJNRB020000009.1 from the genome. The selected sequence was then analyzed using the **getorf** tool. The minimum nucleotide size of an ORF was set to 300 bp, and ORFs in the reverse complement were also included. The analysis produced 206 ORFs, with the longest ORF being 3,441 bp (CAJNRB020000009.1_15). Several ORF entries were inspected. The results demonstrate that a genome can contain sequences that could potentially code for proteins, but an ORF is not automatically a real gene and requires additional evidence for confirmation.
+The **Filter FASTA** tool was first used to select the sequence CAJNRB020000009.1 from the genome. The selected sequence was 194,203 bp long. The selected sequence was then analyzed using the **getorf** tool. 
+
+The minimum nucleotide size of an ORF was set to 300 bp, and ORFs in the reverse complement were also included. The analysis produced 206 ORFs, with the longest ORF being 3,441 bp (CAJNRB020000009.1_15). Several ORF entries were inspected. 
+
+The results demonstrate that a genome can contain sequences that could potentially code for proteins, but an ORF is not automatically a real gene and requires additional evidence for confirmation.
 
 <img width="1746" height="1073" alt="image" src="https://github.com/user-attachments/assets/63972c31-c97b-4cab-b2bd-be7f4fb9cf96" />
 
@@ -69,7 +73,7 @@ The ORF analysis found 206 ORFs, with the longest being 3,441 bp. This demonstra
 
 ## Short Interpretation
 
-The results suggest that the *Canis lupus* genome assembly contains many long sequences, including very long scaffolds. The N50 and L50 values indicate that a large part of the genome is contained in a relatively small number of long scaffolds. The filtering experiment showed that sequences shorter than 10 kb were not present in the assembly, so removing them did not affect the main statistics. The ORF analysis showed that the genome contains regions that may potentially code for proteins, but these regions cannot automatically be considered real genes without additional evidence.
+The activity introduced me to the final conclusion that Canis lupus genome assembly is a mixture of very long and shorter sequences. The scaffold N50 of 65.78 Mb and L50 of 15 show that a large part of the genome is contained in a relatively small number of long scaffolds. The longest scaffold is about 124.7 Mb, which also shows that the assembly contains very long chromosome sequences. However, the genome also has many shorter contigs, so it is not made up only of long sequences. The 41.49% GC content shows the proportion of G and C bases in the genome. The filtering step from Part 4 also indicates that removing sequences below 10 kb did not change the main statistics, meaning that there were no sequences shorter than the said length and therefore did not alter the total genome length. In the last part of this activity (Part 5), the getorf tool produced a result of 206 ORFs, with the longest being 3,441 bp (CAJNRB020000009.1_15). This shows that DNA can contain sequences that could potentially code for proteins, but an ORF is not automatically a real gene and needs more evidence to be confirmed. This activity helped me understand the basic structure of the Canis lupus genome. It also demonstrates how genome statistics and ORF analysis can be used to learn more about its sequences.
 
 ## Screenshots
 
